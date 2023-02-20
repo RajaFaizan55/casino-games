@@ -1,0 +1,36 @@
+.wraper {
+  display: none;
+  @media (max-width: 650px) {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: none;
+  @media (max-width: 650px) {
+    display: flex;
+    p {
+      padding: 10px;
+      color: orange;
+      font-family: sans-serif;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 10px;
+    }
+  }
+}
+
+.dropDown {
+  position: absolute;
+  border-radius: 10px;
+  background-color: black;
+  z-index: 2;
+  p {
+    width: max-content;
+  }
+}

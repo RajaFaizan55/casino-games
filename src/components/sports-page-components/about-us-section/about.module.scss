@@ -1,0 +1,76 @@
+.wraper {
+  padding: 10px 270px;
+  color: #fff;
+  @media (max-width: 650px) {
+    padding: 20px;
+  }
+  h1 {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 110px;
+    margin: 100px 0px;
+    color: #fff;
+    @media (max-width: 650px) {
+      font-size: 25px;
+      margin: 10px 0px;
+    }
+  }
+  p {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    @media (max-width: 650px) {
+      font-size: 20px;
+    }
+  }
+  .WeAre {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 65px;
+    margin: 100px 0px;
+    @media (max-width: 650px) {
+      font-size: 20px;
+    }
+  }
+  .num {
+    padding: 8px 85px;
+    background-color: transparent;
+    border: 2px solid orange;
+    width: max-content;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: orange;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    @media (max-width: 650px) {
+      padding: 8px 5px;
+      font-size: 11px;
+    }
+    img {
+      width: 50px;
+      @media (max-width: 650px) {
+        width: 30px;
+      }
+    }
+
+    span {
+      font-size: 30px;
+      font-family: sans-serif;
+      font-weight: 900;
+      @media (max-width: 650px) {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .desc {
+    span {
+      font-size: 30px !important;
+      @media (max-width: 650px) {
+        font-size: 18px !important;
+      }
+    }
+  }
+}

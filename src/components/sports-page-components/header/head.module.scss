@@ -1,0 +1,64 @@
+.wraper {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  top: 0px;
+  z-index: 20;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    display: none;
+  }
+  p {
+    margin-right: 50px;
+    border: 3px solid transparent;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 25px;
+    padding: 10px 0px;
+    &:hover {
+      box-shadow: 0 0 10px 0 #edca44 inset, 0 0 20px 2px #edca44;
+      border: 3px solid #edca44;
+      border-radius: 7px;
+    }
+    @media (max-width: 650px) {
+      margin-top: 20px;
+      margin-right: 0px;
+      font-size: 10px;
+    }
+  }
+}
+
+.social {
+  margin-top: 350px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  @media (max-width: 650px) {
+    justify-content: center;
+    display: none;
+  }
+  img {
+    width: 40px;
+    &:hover {
+      box-shadow: 0 0 10px 0 #edca44 inset, 0 0 20px 2px #edca44;
+      border: 3px solid #edca44;
+    }
+  }
+}
+
+.dropDown {
+  position: absolute;
+  border-radius: 10px;
+  background-color: black;
+  z-index: 5;
+  p {
+    width: 100%;
+  }
+}

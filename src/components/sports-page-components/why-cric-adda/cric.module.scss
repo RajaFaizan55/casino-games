@@ -1,0 +1,117 @@
+.wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 20px;
+  padding: 20px 30px;
+  @media (max-width: 600px) {
+    padding: 10px;
+  }
+  h1 {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 110px;
+    margin: 100px 0px;
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
+  }
+  .headingSec {
+    color: #fff;
+    font-size: 40px;
+    margin: 30px 0px;
+    @media (max-width: 600px) {
+      font-size: 10px;
+      margin: 0;
+    }
+  }
+  .desc {
+    width: 320px;
+    margin-left: 10px;
+
+    span {
+      // font-size: 10px;
+      color: orange;
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
+    }
+    @media (max-width: 600px) {
+      width: 110px;
+    }
+  }
+  span {
+    color: orange;
+  }
+  .cardContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 600px) {
+        margin: 0px;
+        display: block;
+      }
+    }
+  }
+  .premium {
+    width: 100%;
+    border: 10px solid orange;
+    padding: 80px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: orange;
+    margin: 50px 0px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    h2 {
+      font-family: sans-serif;
+      font-size: 50px;
+      font-weight: 900;
+      font-style: italic;
+      width: 380;
+      @media (max-width: 600px) {
+        font-size: 30px;
+        width: max-content;
+      }
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      font-style: italic;
+      width: 500px;
+      @media (max-width: 600px) {
+        font-size: 20px;
+        width: 300px;
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+
+.hoverBtn {
+  img {
+    @media (max-width: 600px) {
+      width: 50px;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 10px 0 #edca44 inset, 0 0 20px 2px #edca44;
+    border: 3px solid #edca44;
+  }
+}

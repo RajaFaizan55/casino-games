@@ -1,0 +1,116 @@
+.wraper {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: 600px) {
+    padding: 10px;
+  }
+  .nameSec {
+    font-size: 65px;
+    @media (max-width: 600px) {
+      font-size: px;
+    }
+  }
+  h1 {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 110px;
+    margin: 100px 0px;
+    @media (max-width: 600px) {
+      font-size: 40px;
+    }
+  }
+  .circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid orange;
+    color: orange;
+    margin: 20px 10px;
+    @media (max-width: 600px) {
+      width: 100px;
+      height: 100px;
+    }
+    h2 {
+      margin: 0px;
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 80px;
+      @media (max-width: 600px) {
+        font-size: 40px;
+      }
+    }
+  }
+  .cardDiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    span {
+      font-family: sans-serif;
+      font-weight: 600;
+      width: 280px;
+      text-align: center;
+      font-size: 25px;
+      @media (max-width: 600px) {
+        font-size: 12px;
+        width: 180px;
+      }
+    }
+  }
+
+  p {
+    color: orange;
+    font-size: 14px;
+    margin: 10px 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  .num {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 2px solid orange;
+    width: max-content;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    &:hover {
+      box-shadow: 0 0 10px 0 #edca44 inset, 0 0 20px 2px #edca44;
+      border: 3px solid #edca44;
+    }
+    span {
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+    @media (max-width: 600px) {
+      font-size: 12px;
+      padding: 8px 3px;
+      span {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+.lowerText {
+  p {
+    font-size: 20px;
+    @media (max-width: 600px) {
+      font-size: 12px;
+    }
+  }
+}

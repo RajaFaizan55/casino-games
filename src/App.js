@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import "./App.css";
+import SplashScreen from "./pages/splash";
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Sports from "./pages/sports/index";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 150);
+  }, []);
+
+  return loading ? (
+    <SplashScreen />
+  ) : (
+    <div style={{ background: "black", width: "99vw", height: "100vh" }}>
+      <Routes>
+        <Route path="/" exact element={<Sports />} />
+        <Route path="/sports" exact element={<Sports />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,34 @@
+.wraper {
+  // padding: 15px 100px;
+  @media (max-width: 600px) {
+    padding: 10px 5px;
+  }
+  .bannerSec {
+    display: flex;
+    flex-wrap: wrap;
+    .bannver1 {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 450px;
+        @media (max-width: 600px) {
+          width: 100%;
+          height: 200px;
+        }
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+    img {
+      width: 500px;
+      height: 300px;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+  .cardSec {
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,115 @@
+.wraper {
+  // padding: 15px 100px;
+  @media (max-width: 600px) {
+    padding: 10px 5px;
+  }
+  .bannerSec {
+  }
+  .cardSec {
+    margin-top: 4px;
+  }
+}
+
+.pic1 {
+  width: 100%;
+  margin: 300px 0px 150px 0px;
+  position: relative;
+  @media (max-width: 600px) {
+    margin: 50px 0px;
+  }
+  img {
+    width: 900px;
+    height: 600px;
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 157px;
+    }
+  }
+  .info {
+    padding: 75px 200px 75px 150px;
+    border: 6px solid orange;
+    position: absolute;
+    top: -190px;
+    right: 170px;
+    @media (max-width: 600px) {
+      padding: 10px;
+      top: -70px;
+      right: 30px;
+    }
+    p {
+      color: orange;
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 48px;
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        animation: mover 0.5s infinite alternate;
+        @media (max-width: 600px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+.pic2 {
+  margin: 80px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  img {
+    width: 487px;
+    height: 619px;
+    @media (max-width: 600px) {
+      width: 100px;
+      height: 200px;
+    }
+  }
+  .info {
+    padding: 40px 60px;
+    // border: 6px solid orange;
+    position: absolute;
+    top: 160px;
+    left: 460px;
+    @media (max-width: 600px) {
+      padding: 10px;
+      top: 50px;
+      left: 50px;
+    }
+    p {
+      color: orange;
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 48px;
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        animation: mover 0.5s infinite alternate;
+        @media (max-width: 600px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
